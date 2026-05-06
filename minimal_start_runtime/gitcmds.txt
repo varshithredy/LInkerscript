@@ -1,0 +1,31 @@
+
+---
+
+# Git Commands (step-by-step)
+
+```bash
+# 1. create repo folder
+mkdir baremetal-runtime
+cd baremetal-runtime
+
+# 2. create structure
+mkdir minimal_start
+touch README.md Makefile linker.ld
+touch minimal_start/start.s minimal_start/main.c
+
+# 3. add files (paste code)
+
+# 4. init git
+git init
+
+# 5. add files
+git add .
+
+# 6. commit
+git commit -m "Initial commit: custom _start without libc"
+
+# 7. connect to GitHub repo
+git remote add origin <your-repo-url>
+
+# 8. push
+git push -u origin main
